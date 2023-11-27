@@ -1,0 +1,34 @@
+<template>
+    <p>{activeSectionsMessage}</p>
+
+    <lightning-accordion
+        allow-multiple-sections-open
+        onsectiontoggle={handleSectionToggle}
+        active-section-name="A"
+    >
+    <lightning-accordion-section name="A" label="Forgotten Password">
+        <p>
+            <strong>Q: I have forgotten my password, what can I do?</strong>
+        </p>
+        <p>
+            <strong>A:</strong> If you've forgotten your password, follow these steps to reset it:
+        </p>
+        <ol>
+            <li>Visit <a href="https://www.ecobat.com/Portal" target="_blank">www.ecobat.com/Portal</a>.</li>
+            <li>Below the "Log in" button, click on "Forgot your password?"</li>
+            <li>Follow the on-screen instructions to reset your password.</li>      
+        </ol>
+        <img src="https://imager-x.spacecat.ninja/imager-x-poster.png" alt="Image Description" />
+    </lightning-accordion-section>
+    
+    
+
+        <lightning-accordion-section name="B" label="Accordion Title B">
+            <p>This is the content area for section B.</p>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="C" label="Accordion Title C">
+            <p>This is the content area for section C.</p>
+        </lightning-accordion-section>
+    </lightning-accordion>
+</template>

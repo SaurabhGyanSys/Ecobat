@@ -1,0 +1,16 @@
+/* ForgottenPasswordLWC.css */
+:host {
+    /* Add your styles here */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 10px;
+}
+
+a {
+    color: #0070d2;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #00509e;
+}
