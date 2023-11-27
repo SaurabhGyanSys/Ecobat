@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Custom Object Data" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <lightning-accordion allow-multiple-sections-open onsectiontoggle={handleSectionToggle}
+                active-section-name={customObject}>
+                <lightning-accordion-section>
+                    <template if:true={customObjectList}>
+                        <template for:each={customObjectList} for:item="customObject">
+                            <li key={customObject.Id}>
+                                <p>
+                                    <strong>Q: {customObject.Question__c}</strong>
+                                </p>
+                                <p>
+                                    <strong>A:</strong> {customObject.Answer__c}
+                                </p>
+    
+                            </li>
+                        </template>
+                    </template>
+                </lightning-accordion-section> 
+                
+            </lightning-accordion>
+
+            <template if:false={customObjectList}>
+                No data available.
+            </template>
+        </div>
+    </lightning-card>
+</template>
